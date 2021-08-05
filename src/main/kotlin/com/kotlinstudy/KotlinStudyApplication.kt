@@ -1,11 +1,17 @@
 package com.kotlinstudy
 
+import com.kotlinstudy.chapter2.test
+import com.kotlinstudy.chapter2.testVariable
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
+import skipException
 
 @SpringBootApplication
 class KotlinStudyApplication
 
 fun main(args: Array<String>) {
-    runApplication<KotlinStudyApplication>(*args)
+    test()
+    testVariable()
+    skipException()
+
+    // runApplication<KotlinStudyApplication>(*args)
 }

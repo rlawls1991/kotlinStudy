@@ -23,8 +23,8 @@ fun isAlive_리팩토링_When_사용(alive: Boolean, numberOfLiveNeighbors: Int)
 }
 
 fun whatToDo(dayOfWeek: Any) = when (dayOfWeek) {
-    "Saturday", "Sunday" -> "Relax" in listOf("Monday", "Tuesday", "Wednesday", "Thursday")
-    -> "Work hard"
+    "Saturday", "Sunday" -> "Relax"
+    in listOf("Monday", "Tuesday", "Wednesday", "Thursday") -> "Work hard"
     in 2..4 -> "Work hard"
     "Friday" -> "Party"
     is String -> "What?"

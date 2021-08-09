@@ -21,5 +21,7 @@ fun main(args: Array<String>) {
     arrayAndList()
     isAlive(true, 3)
     isAlive_리팩토링_When_사용(true, 3)
+    println(whatToDo("Sunday"))
+    println(whatToDo(3))
     // runApplication<KotlinStudyApplication>(*args)
 }
